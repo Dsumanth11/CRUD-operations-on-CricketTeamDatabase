@@ -1,0 +1,30 @@
+GET http://localhost:3000/players/
+####
+
+###
+GET  http://localhost:3000/players/10/
+
+###
+
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+    "playerName": "Bittu Sumanth",
+    "jerseyNumber": 9,
+    "role": "All-rounder"
+}
+
+####
+PUT http://localhost:3000/players/14/ 
+Content-Type: application/json
+
+{
+  "playerName": "Bittu Sumanth",
+  "jerseyNumber": 54,
+  "role": "Bowler"
+}
+####
+DELETE http://localhost:3000/players/2/
+
+
